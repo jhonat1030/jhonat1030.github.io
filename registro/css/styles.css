@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'elegante';
+    src: url(../font/La\ Graziela\ Script\ Demo.otf);
+    font-family: 'mejor';
+    src: url(../font/Signatra.otf);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../img/cool-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+.logo {
+    max-width: 5rem;
+    margin-left: 1rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.abrir_menu,
+.cerrar_menu {
+    display: none;
+}
+
+#ingresosup {
+    float: right;
+    width: 250px;
+    margin-top: -30px;
+}
+
+
+
+.form {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    border-radius: 50px;
+    border: #a31f8b solid;
+    padding: 50px;
+    width: 30%;
+    background-color: #8673a1;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 230px;
+    border: 1px;
+}
+
+#registro {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#opc {
+    background-color: #a31f8b;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    border: 0px solid black;
+    width: 200px;
+    text-decoration: none;
+
+}
+
+#op {
+    border: 1px;
+    border-radius: 50px;
+    padding: 4px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#Departamento {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+button {
+
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    width: 170px;
+    margin-top: 70px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #a31f8b;
+    height: 38px;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+div {
+    display: inline-flex;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+
+#recordarme {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: white;
+}
+
+#recordar {
+    float: left;
+
+    background-color: #a31f8b;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+#o {
+    margin-left: 20px;
+}
+
+.for {
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 280px) and (max-width:490px) {
+
+    .abrir_menu,
+    .cerrar_menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        align-items: flex-start;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1CB5E0;
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    #ingresosup {
+        float: right;
+        width: 250px;
+        margin-top: -30px;
+    }
+
+
+
+    .form {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: #a31f8b solid;
+        padding: 50px;
+        width: 30%;
+        background-color: #8673a1;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4px;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 1rem;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        width: 100px;
+        border: 1px;
+    }
+    #opc {
+        background-color: #a31f8b;
+        color: white;
+        padding: 7px;
+        border-radius: 10px;
+        border: 0px solid black;
+        width: 200px;
+        text-decoration: none;
+    
+    }
+
+    #op {
+        border: 1px;
+        border-radius: 50px;
+        padding: 4px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #Departamento {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    button {
+
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        width: auto;
+        margin-top: 70px;
+    }
+
+    footer {
+        margin-top: 40px;
+        background-color: #a31f8b;
+        height: 38px;
+        padding: 10px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div {
+        display: inline-flex;
+        margin-left: 50px;
+        margin-right: 50px;
+
+
+    }
+
+    #recordarme {
+        display: inline-block;
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    #recordar {
+
+        background-color: #a31f8b;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    #o {
+        margin-left: 20px;
+    }
+
+    .for {
+        color: rgb(129, 3, 3);
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 491px) and (max-width:570px) {
+
+    .abrir_menu,
+    .cerrar_menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        align-items: flex-start;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1CB5E0;
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    #ingresosup {
+        float: right;
+        width: 250px;
+        margin-top: -30px;
+    }
+
+
+
+    .form {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    form {
+        border-radius: 50px;
+        border: #a31f8b solid;
+        padding: 50px;
+        width: 30%;
+        background-color: #8673a1;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4px;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        width: 150px;
+        border: 1px;
+    }
+
+    #registro {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+    #opc {
+        background-color: #a31f8b;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 0px solid black;
+        width: 200px;
+
+    }
+
+    #op {
+        border: 1px;
+        border-radius: 50px;
+        padding: 4px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #Departamento {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    button {
+
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        width: 170px;
+        margin-top: 70px;
+    }
+
+    footer {
+        margin-top: 40px;
+        background-color: #a31f8b;
+        height: 38px;
+        padding: 10px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div {
+        display: inline-flex;
+        margin-left: 50px;
+        margin-right: 50px;
+
+
+    }
+
+    #recordarme {
+        display: inline-block;
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    #recordar {
+        float: left;
+
+        background-color: #a31f8b;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    #o {
+        margin-left: 20px;
+    }
+
+    .for {
+        color: rgb(255, 255, 255);
+    }
+
+}

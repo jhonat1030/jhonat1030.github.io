@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'elegante';
+    src: url(../font/La\ Graziela\ Script\ Demo.otf);
+    font-family: 'mejor';
+    src: url(../font/Signatra.otf);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../img/cool-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+.logo {
+    max-width: 5rem;
+    margin-left: 1rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+.abrir_menu,
+.cerrar_menu {
+    display: none;
+}
+
+.contenedor {
+    flex-flow: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor_hijo {
+    margin-top: 7rem;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 2rem;
+}
+
+.imagen {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+h1 {
+    font-family: mejor;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 280px) and (max-width:490px) {
+
+    .abrir_menu,
+    .cerrar_menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        align-items: flex-start;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1CB5E0;
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .contenedor {
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .contenedor_hijo {
+        margin-top: 3.5rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        gap: 0.8rem;
+    }
+    
+    .imagen {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-family: mejor;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+
+@media screen and (min-width: 491px) and (max-width:570px) {
+
+    
+    .abrir_menu,
+    .cerrar_menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        align-items: flex-start;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1CB5E0;
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    .contenedor {
+        flex-flow: wrap;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    .contenedor_hijo {
+        margin-top: 5rem;
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        gap: 1.5rem;
+    }
+    
+    .imagen {
+        width: 11rem;
+        height: 11rem;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-family: mejor;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+    }
+}

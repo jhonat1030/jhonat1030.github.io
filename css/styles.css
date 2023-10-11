@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'elegante';
+    src: url(../font/La\ Graziela\ Script\ Demo.otf);
+    font-family: 'mejor';
+    src: url(../css/font/Signatra.otf);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../img/cool-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+.logo {
+    max-width: 5rem;
+    margin-left: 1rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.arte {
+    font-size: 90px;
+    font-family:mejor;
+    color: rgb(255, 255, 255);
+
+}
+
+.imagen {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+#contenedor_padre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abrir_menu,
+.cerrar_menu {
+    display: none;
+}
+
+@media screen and (min-width: 280px) and (max-width:490px) {
+
+    .abrir_menu,
+    .cerrar_menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        align-items: flex-start;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1CB5E0;
+        padding: 2rem;
+
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: end;
+    }
+    #contenedor_padre {
+        display: flex;
+        justify-content: center;
+    
+        margin-top: 50px;
+     
+    }
+    
+    #contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+    }
+    .imagen {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 49px) and (max-width:570px) {
+
+    .abrir_menu,
+    .cerrar_menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        align-items: flex-start;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1CB5E0;
+        padding: 2rem;
+
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: end;
+    }
+    #contenedor_padre {
+        display: flex;
+        justify-content: center;
+    
+        margin-top: 50px;
+     
+    }
+    
+    #contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+    }
+    .imagen {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    
+}
